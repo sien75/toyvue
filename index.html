@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>类似Vue的MVVM框架打造</title>
+    </head>
+    <div style="text-align: center">
+        实现Vue的一丢丢基本功能, 造个玩具车轮子!<br>
+        包括<br>
+        v-bind:attr="value", :attr="value"的单向属性绑定<br>
+        v-on:event="handler", @event="handler"的单向监听函数绑定<br>
+        v-model="value"双向属性绑定<br>
+        {{variable}}的单向模板传值
+    </div>
+    <div id="ele" style="text-align: center; margin: 20px;">
+        <button :title="title1" @click="show">{{button1}}</button>
+        <button :title="title2" @click="show">{{button2}}</button>
+        <br><br>
+        <input type="button" value="-" @click="minus">
+        <input type="number" v-model="model">
+        <input type="button" value="+" @click="plus">
+    </div>
+    <script src="/main.js" type="module"></script>
+</html>
